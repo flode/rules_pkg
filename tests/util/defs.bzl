@@ -126,7 +126,7 @@ link_tree = rule(
     doc = """Helper rule to create a lot of fake symlinks.
 
 The inspiration is to create test data for the kinds of layouts needed by
-nodejs.  See. https://pnpm.io/symlinked-node-modules-structure
+nodejs.  See <https://pnpm.io/symlinked-node-modules-structure>.
     """,
     implementation = _link_tree_impl,
     attrs = {
@@ -165,7 +165,7 @@ This is intended only for testing the manifest creation features.""",
             including something like "x64_windows-fastbuild") isn't present in
             paths in the manifest.
 
-            See also https://docs.bazel.build/versions/main/skylark/lib/File.html#path
+            See also <https://docs.bazel.build/versions/main/skylark/lib/File.html#path>
             """,
             default = True,
         ),

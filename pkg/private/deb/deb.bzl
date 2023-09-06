@@ -216,12 +216,12 @@ pkg_deb_impl = rule(
         ),
         "config": attr.label(
             doc = """config file used for debconf integration.
-            See https://www.debian.org/doc/debian-policy/ch-binary.html#prompting-in-maintainer-scripts.""",
+            See <https://www.debian.org/doc/debian-policy/ch-binary.html#prompting-in-maintainer-scripts>.""",
             allow_single_file = True,
         ),
         "changelog": attr.label(
             doc = """The package changelog.
-            See https://www.debian.org/doc/debian-policy/ch-source.html#s-dpkgchangelog.""",
+            See <https://www.debian.org/doc/debian-policy/ch-source.html#s-dpkgchangelog>.""",
             allow_single_file = True
         ),
         "description": attr.string(
@@ -232,41 +232,41 @@ pkg_deb_impl = rule(
             allow_single_file = True
         ),
         "distribution": attr.string(
-            doc = """"distribution: See http://www.debian.org/doc/debian-policy.""",
+            doc = """"distribution: See <http://www.debian.org/doc/debian-policy>.""",
             default = "unstable",
         ),
         "urgency": attr.string(
-            doc = """"urgency: See http://www.debian.org/doc/debian-policy.""",
+            doc = """"urgency: See <http://www.debian.org/doc/debian-policy>.""",
             default = "medium",
         ),
         "preinst": attr.label(
             doc = """"The pre-install script for the package.
-            See http://www.debian.org/doc/debian-policy/ch-maintainerscripts.html.""",
+            See <http://www.debian.org/doc/debian-policy/ch-maintainerscripts.html>.""",
             allow_single_file = True,
         ),
         "postinst": attr.label(
             doc = """The post-install script for the package.
-            See http://www.debian.org/doc/debian-policy/ch-maintainerscripts.html.""",
+            See <http://www.debian.org/doc/debian-policy/ch-maintainerscripts.html>.""",
             allow_single_file = True,
         ),
         "prerm": attr.label(
             doc = """The pre-remove script for the package.
-            See http://www.debian.org/doc/debian-policy/ch-maintainerscripts.html.""",
+            See <http://www.debian.org/doc/debian-policy/ch-maintainerscripts.html>.""",
             allow_single_file = True,
         ),
         "postrm": attr.label(
             doc = """The post-remove script for the package.
-            See http://www.debian.org/doc/debian-policy/ch-maintainerscripts.html.""",
+            See http://www.debian.org/doc/debian-policy/ch-maintainerscripts.html>.""",
             allow_single_file = True,
         ),
         "templates": attr.label(
             doc = """templates file used for debconf integration.
-            See https://www.debian.org/doc/debian-policy/ch-binary.html#prompting-in-maintainer-scripts.""",
+            See <https://www.debian.org/doc/debian-policy/ch-binary.html#prompting-in-maintainer-scripts>.""",
             allow_single_file = True,
         ),
         "triggers": attr.label(
             doc = """triggers file for configuring installation events exchanged by packages.
-            See https://wiki.debian.org/DpkgTriggers.""",
+            See <https://wiki.debian.org/DpkgTriggers>.""",
             allow_single_file = True,
         ),
         "built_using": attr.string(
@@ -278,64 +278,64 @@ pkg_deb_impl = rule(
         ),
         "conffiles": attr.string_list(
             doc = """The list of conffiles or a file containing one conffile per line. Each item is an absolute path on the target system where the deb is installed.
-See https://www.debian.org/doc/debian-policy/ch-files.html#s-config-files.""",
+See <https://www.debian.org/doc/debian-policy/ch-files.html#s-config-files>.""",
             default = [],
         ),
         "conffiles_file": attr.label(
             doc = """The list of conffiles or a file containing one conffile per line. Each item is an absolute path on the target system where the deb is installed.
-See https://www.debian.org/doc/debian-policy/ch-files.html#s-config-files.""",
+See <https://www.debian.org/doc/debian-policy/ch-files.html#s-config-files>.""",
             allow_single_file = True,
         ),
         "priority": attr.string(
             doc = """The priority of the package.
-            See http://www.debian.org/doc/debian-policy/ch-archive.html#s-priorities.""",
+            See <http://www.debian.org/doc/debian-policy/ch-archive.html#s-priorities>.""",
         ),
         "section": attr.string(
             doc = """The section of the package.
-            See http://www.debian.org/doc/debian-policy/ch-archive.html#s-subsections.""",
+            See <http://www.debian.org/doc/debian-policy/ch-archive.html#s-subsections>.""",
         ),
         "homepage": attr.string(doc = """The homepage of the project."""),
         "license": attr.string(doc = """The license of the project."""),
 
         "breaks": attr.string_list(
-            doc = """See http://www.debian.org/doc/debian-policy/ch-relationships.html#s-binarydeps.""",
+            doc = """See <http://www.debian.org/doc/debian-policy/ch-relationships.html#s-binarydeps>.""",
             default = [],
         ),
         "conflicts": attr.string_list(
-            doc = """See http://www.debian.org/doc/debian-policy/ch-relationships.html#s-binarydeps.""",
+            doc = """See <http://www.debian.org/doc/debian-policy/ch-relationships.html#s-binarydeps>.""",
             default = [],
         ),
         "depends": attr.string_list(
-            doc = """See http://www.debian.org/doc/debian-policy/ch-relationships.html#s-binarydeps.""",
+            doc = """See <http://www.debian.org/doc/debian-policy/ch-relationships.html#s-binarydeps>.""",
             default = [],
         ),
         "depends_file": attr.label(
             doc = """File that contains a list of package dependencies. Must not be used with `depends`.
-            See http://www.debian.org/doc/debian-policy/ch-relationships.html#s-binarydeps.""",
+            See <http://www.debian.org/doc/debian-policy/ch-relationships.html#s-binarydeps>.""",
             allow_single_file = True,
         ),
         "enhances": attr.string_list(
-            doc = """See http://www.debian.org/doc/debian-policy/ch-relationships.html#s-binarydeps.""",
+            doc = """See <http://www.debian.org/doc/debian-policy/ch-relationships.html#s-binarydeps>.""",
             default = [],
         ),
         "provides": attr.string_list(
-            doc = """See http://www.debian.org/doc/debian-policy/ch-relationships.html#s-binarydeps.""",
+            doc = """See <http://www.debian.org/doc/debian-policy/ch-relationships.html#s-binarydeps>.""",
             default = [],
         ),
         "predepends": attr.string_list(
-            doc = """See http://www.debian.org/doc/debian-policy/ch-relationships.html#s-binarydeps.""",
+            doc = """See <http://www.debian.org/doc/debian-policy/ch-relationships.html#s-binarydeps>.""",
             default = [],
         ),
         "recommends": attr.string_list(
-            doc = """See http://www.debian.org/doc/debian-policy/ch-relationships.html#s-binarydeps.""",
+            doc = """See <http://www.debian.org/doc/debian-policy/ch-relationships.html#s-binarydeps>.""",
             default = [],
         ),
         "replaces": attr.string_list(
-            doc = """See http://www.debian.org/doc/debian-policy/ch-relationships.html#s-binarydeps.""",
+            doc = """See <http://www.debian.org/doc/debian-policy/ch-relationships.html#s-binarydeps>.""",
             default = [],
         ),
         "suggests": attr.string_list(
-            doc = """See http://www.debian.org/doc/debian-policy/ch-relationships.html#s-binarydeps.""",
+            doc = """See <http://www.debian.org/doc/debian-policy/ch-relationships.html#s-binarydeps>.""",
             default = [],
         ),
 

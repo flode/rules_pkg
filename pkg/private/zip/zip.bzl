@@ -103,7 +103,7 @@ pkg_zip_impl = rule(
             default = "0555",
         ),
         "package_dir": attr.string(
-            doc = """Prefix to be prepend to all paths written.
+            doc = """Prefix to be prepended to all paths written.
 The name may contain variables, same as [package_file_name](#package_file_name)""",
             default = "/",
         ),
@@ -125,7 +125,7 @@ limited to a granularity of 2 seconds.""",
         "compression_type": attr.string(
             default = "deflated",
             doc = """The compression to use. Note that lzma and bzip2 might not be supported by all readers.
-The list of compressions is the same as Python's ZipFile: https://docs.python.org/3/library/zipfile.html#zipfile.ZIP_STORED""",
+The list of compressions is the same as Python's ZipFile: <https://docs.python.org/3/library/zipfile.html#zipfile.ZIP_STORED>""",
             values = ["deflated", "lzma", "bzip2", "stored"]
         ),
 

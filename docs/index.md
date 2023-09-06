@@ -22,4 +22,3 @@ consult more than one place to get a complete picture.
 *   [Version 0.6.0](0.6.0/reference.md)
 *   [Version 0.5.0](0.5.0/reference.md)
 *   [Version 0.4.0](0.4.0/reference.md)
-*   [Legacy](https://github.com/bazelbuild/rules_pkg/blob/main/pkg/docs/reference.md)

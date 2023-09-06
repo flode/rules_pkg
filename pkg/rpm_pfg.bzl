@@ -911,7 +911,7 @@ pkg_rpm = rule(
 
             Corresponds to the "Conflicts" preamble tag.
 
-            See also: https://rpm.org/user_doc/dependencies.html
+            See also: <https://rpm.org/user_doc/dependencies.html>
             """,
         ),
         "provides": attr.string_list(
@@ -919,7 +919,7 @@ pkg_rpm = rule(
 
             Corresponds to the "Provides" preamble tag.
 
-            See also: https://rpm.org/user_doc/dependencies.html
+            See also: <https://rpm.org/user_doc/dependencies.html>
             """,
         ),
         "requires": attr.string_list(
@@ -927,7 +927,7 @@ pkg_rpm = rule(
 
             Corresponds to the "Requires" preamble tag.
 
-            See also: https://rpm.org/user_doc/dependencies.html
+            See also: <https://rpm.org/user_doc/dependencies.html>
             """,
         ),
         "requires_contextual": attr.string_list_dict(
@@ -962,7 +962,7 @@ pkg_rpm = rule(
             For capabilities that are always required by packages at runtime,
             use the `requires` attribute instead.
 
-            See also: https://rpm.org/user_doc/more_dependencies.html
+            See also: <https://rpm.org/user_doc/more_dependencies.html>
 
             NOTE: `pkg_rpm` does not check if the keys of this dictionary are
             acceptable to `rpm(8)`.

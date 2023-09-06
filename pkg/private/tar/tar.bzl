@@ -253,7 +253,7 @@ pkg_tar_impl = rule(
             doc = """(note: Use strip_prefix = "." to strip path to the package but preserve relative paths of sub directories beneath the package.)"""
         ),
         "package_dir": attr.string(
-            doc = """Prefix to be prepend to all paths written.
+            doc = """Prefix to be prepended to all paths written.
 The name may contain variables, same as [package_file_name](#package_file_name)""",
         ),
         "package_dir_file": attr.label(allow_single_file = True),
